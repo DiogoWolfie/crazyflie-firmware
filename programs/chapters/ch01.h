@@ -32,8 +32,11 @@ int main()
     motor4.period(1.0/700);
     while(true)
     {
-        led2 = !led2;
-        wait(5);
+        for(int i = 0; i==5; i++){
+            led2 = !led2;
+            wait(1);
+        }
+        
 
         //turn on
         led4 = !led4;
